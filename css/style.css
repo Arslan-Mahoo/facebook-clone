@@ -219,3 +219,81 @@ header .right-part ul li a:not(.avatar) {
 header .right-part ul li a:hover{
     background-color: #e4e6eb;
 }
+
+/* Main Content  [Left Side bar]*/
+
+.main-content {
+     margin-top: 65px;
+     padding: 0 15px;
+     display: flex;
+     padding: 10px;
+}
+
+.main-content .left-sidebar{
+    width: 25%;
+    height: 80vh;
+    overflow-y: scroll;
+}
+
+
+.main-content .left-sidebar::-webkit-scrollbar {
+    width: 0.5rem;
+}
+.main-content .left-sidebar::-webkit-scrollbar-track {
+    background-color: transparent;
+    
+    
+}
+.main-content .left-sidebar::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    background-color: #607386;
+    
+}
+
+.main-content .left-sidebar ul li a{
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.main-content .left-sidebar ul li a .icon{
+    width: 20%;
+    margin-right: 10px;
+}
+
+.main-content .left-sidebar ul li a .icon img{
+    width: 30px ;
+}
+
+.main-content .left-sidebar ul li a h4{
+    font-weight: 500;
+    font-size: 15px;
+}
+
+
+.main-content .left-sidebar ul li a:hover{
+    background-color: #e4e6eb;
+}
+
+.main-content .left-sidebar ul .see-more a .icon,
+.main-content .left-sidebar ul .see-more a .icon{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background-color: #aaa;
+}
+
+ .main-content .left-sidebar ul .overflow-btn,
+ .main-content .left-sidebar ul  .see-less{
+    display: none;
+ }
+
+ .main-content .left-sidebar ul .overflow-btn.active,
+ .main-content .left-sidebar ul  .see-less.active{
+    display: block;
+ }
+

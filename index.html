@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <link rel="shortcut icon" href="img/favicon.png">
     <title>Facebook Clone</title>
 </head>
@@ -54,9 +55,166 @@
             </div>
         </header>
         <!-- Header ends Here -->
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="left-sidebar">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><img src="img/Covid.png" alt=""></span>
+                            <h4>COVID-19 Information Center</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><img src="img/Friends.png" alt=""></span>
+                            <h4>Find Friends</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><img src="img/market place.png" alt=""></span>
+                            <h4>Market Place</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><img src="img/Events.png" alt=""></span>
+                            <h4>Events</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><img src="img/Groups.png" alt=""></span>
+                            <h4>Groups</h4>
+                        </a>
+                    </li>
+                    <li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><img src="img/Help.png" alt=""></span>
+                            <h4>Community Help</h4>
+                        </a>
+                    </li>
+                    <li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><img src="img/Most Recent.png" alt=""></span>
+                            <h4>Most Recent</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><img src="img/watch.png" alt=""></span>
+                            <h4>Watch</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><img src="img/memories.png" alt=""></span>
+                            <h4>Memories</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><img src="img/Saved.png" alt=""></span>
+                            <h4>Saved</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><img src="img/Pages.png" alt=""></span>
+                            <h4>Pages</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><img src="img/messanger.png" alt=""></span>
+                            <h4>Messenger</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><img src="img/ad centre.png" alt=""></span>
+                            <h4>Ad Center</h4>
+                        </a>
+                    </li>
+                    <li class="see-more">
+                        <a href="#">
+                            <span class="icon"><i class="fa-solid fa-angle-down"></i></span>
+                            <h4>See More</h4>
+                        </a>
+                    </li>
+
+
+                    <li class="overflow-btn">
+                        <a href="#">
+                            <span class="icon"><img src="img/ads manger.png" alt=""></span>
+                            <h4>Ad Manger</h4>
+                        </a>
+                    </li>   
+                    <li class="overflow-btn">
+                        <a href="#">
+                            <span class="icon"><img src="img/Blood donation.png" alt=""></span>
+                            <h4>Blood Donations</h4>
+                        </a>
+                    </li>
+                    <li class="overflow-btn">
+                        <a href="#">
+                            <span class="icon"><img src="img/Gaming.png" alt=""></span>
+                            <h4>Gaming Video</h4>
+                        </a>
+                    </li>
+                    <li class="overflow-btn">
+                        <a href="#">
+                            <span class="icon"><img src="img/Favorites.png" alt=""></span>
+                            <h4>favourites</h4>
+                        </a>
+                    </li>
+
+                    <li class="see-less">
+                        <a href="#">
+                            <span class="icon"><i class="fa-solid fa-angle-up"></i></span>
+                            <h4>See Less</h4>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
     </div>
     
 
+    <!-- Jquery Link -->
+    
+
+    <script>
+
+        $(document).ready(function(){
+            $('.see-more').click(function(){
+                $(this).hide();
+                $('.overflow-btn').addClass('active');
+                $('.see-less').addClass('active');
+            })
+            
+            $('.see-less').click(function(){
+                $('.see-more').show();
+                $('.overflow-btn').removeClass('active');
+                $('.see-less').removeClass('active');
+            })
+        })
+
+
+
+    </script>
 
 </body>
 </html>
